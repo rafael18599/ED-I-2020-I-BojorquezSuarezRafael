@@ -13,7 +13,7 @@
 
 int main(void) {
 	setbuf(stdout,NULL);
-	int i,j,M,arr[100][100];
+	int i,j,M,p=1,arr[100][100];
 	printf("\n ingrese el tamañano de la matriz cuadrada: " );
 	scanf("%d",&M);
 	for(i=0;i<M;i++){
@@ -43,9 +43,10 @@ int main(void) {
 						for(j=0;j<M;j++){
 							if(arr[i+1] ==arr[j]){
 								printf("\t %d",arr[i][j]);
+								p=p*arr[i][j];
 							}
 						}
 				}
-
+	printf("\n elproducto de la siguiente diagonal es: %d ",p);
 
 }}
