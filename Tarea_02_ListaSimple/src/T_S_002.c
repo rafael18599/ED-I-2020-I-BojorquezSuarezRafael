@@ -43,7 +43,7 @@ int main(void) {
 			printf("lista[%d]=%d \n",i,ObtenerLista(i));
 	}
 
-	printf("\nEliminar en la lista el elemento 4: \n\n");
+	printf("\nEliminar en la lista la posicion 4: \n\n");
 	EliminarEnLaLista(4);
 	for(int i=0;i<lista.final+1 ;i++){
 		printf("lista[%d]=%d \n",i,ObtenerLista(i));
@@ -65,11 +65,8 @@ int main(void) {
 
 		printf("lista[0]:%d \n",ObtenerPrimero());
 
-	printf("\nObtener Primer Elemento de la lista: \n\n");
+	printf("\nObtener Ultimo Elemento de la lista: \n\n");
 		printf("lista[%d]:%d \n",lista.final,ObtenerFinal());
-
-
-
 
 	return EXIT_SUCCESS;
 }
